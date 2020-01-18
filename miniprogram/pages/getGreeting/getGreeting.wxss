@@ -1,0 +1,19 @@
+/* pages/getGreeting/getGreeting.wxss */
+
+@import "../../style/guide.wxss";
+
+
+.guide .counter {
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+
+.viewset {
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border: 1px dashed lightblue;
+}

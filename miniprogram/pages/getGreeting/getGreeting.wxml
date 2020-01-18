@@ -1,0 +1,24 @@
+<!--pages/getGreeting/getGreeting.wxml-->
+<view class="container">
+
+  <!-- 导航 -->
+  <view class="list">
+    <view class="list-item">
+       <button size="mini" type="default" bindtap="onQuery">Greeting</button>
+    </view>
+
+    <view wx:for="{{queryResult}}">
+      <view class="list-item">
+        <view class="viewset">
+         <text selectable="true">{{item.content}}</text>
+         <button data-gid='{{item.content}}' bindtap="copyBtn">一键复制</button>
+        </view>
+      </view>
+    </view>
+    <view class="list-item" wx:if="{{openid}}">
+      <text class="request-text">openid：{{openid}}</text>
+    </view>
+  </view>
+
+
+</view>
