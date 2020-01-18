@@ -4,7 +4,7 @@
   <!-- 导航 -->
   <view class="list">
     <view class="list-item">
-       <button size="mini" type="default" bindtap="onQuery">Greeting</button>
+       <button size="mini" type="default" bindtap="onQuery">点我·Greeting</button>
     </view>
 
     <view wx:for="{{queryResult}}">
@@ -19,6 +19,6 @@
       <text class="request-text">openid：{{openid}}</text>
     </view>
   </view>
-
+ 
 
 </view>

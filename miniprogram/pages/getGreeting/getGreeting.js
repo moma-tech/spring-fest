@@ -28,14 +28,12 @@ Page({
       .count({
         success: function(ress){
           total=ress.total
-          console.log(ress.total)
         }
     })
     // 查询当前用户所有的 counters
     for(var i=0;i<5;i++){
       id[i] = parseInt(Math.random() * total);
     }
-    console.log(id)
     db.collection('greeting').where({
       _id: db.command.in(id)
     }).field({
@@ -45,14 +43,14 @@ Page({
         this.setData({
           queryResult: res.data
         })
-        console.log('[数据库] [查询记录] 成功: ', res)
+        //console.log('[数据库] [查询记录] 成功: ', res)
       },
       fail: err => {
         wx.showToast({
           icon: 'none',
           title: '查询记录失败'
         })
-        console.error('[数据库] [查询记录] 失败：', err)
+        //console.error('[数据库] [查询记录] 失败：', err)
       }
     })
   },
