@@ -4,14 +4,18 @@
   <!-- 导航 -->
   <view class="list">
     <view class="list-item">
-       <button size="mini" type="default" bindtap="onQuery">点我·Greeting</button>
+       <button style="color:#a13d3d" size="default" plain="true" type="primary" bindtap="onQuery">点我·Greeting</button>
     </view>
-
     <view wx:for="{{queryResult}}">
       <view class="list-item">
-        <view class="viewset">
-         <text selectable="true">{{item.content}}</text>
-         <button data-gid='{{item.content}}' bindtap="copyBtn">一键复制</button>
+        <view class="wx-cards-title-card">
+          <view class="context">
+            <text class="test-font" selectable="true">{{item.content}}</text>
+          </view>
+          <view class="tag">
+            <tag class="i-tag i-tag-none i-tag-red" data-gid='{{item.content}}' bindtap="copyBtn">一键复制</tag>
+          </view>
+          
         </view>
       </view>
     </view>

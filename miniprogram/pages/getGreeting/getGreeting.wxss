@@ -1,7 +1,5 @@
 /* pages/getGreeting/getGreeting.wxss */
-
 @import "../../style/guide.wxss";
-
 
 .guide .counter {
   margin-top: 50rpx;
@@ -10,10 +8,215 @@
   align-content: space-between;
 }
 
+.test-font {
+  font-style: normal;
+  /* font-weight: bold; */
+  font-family: KaiTi;
+  font-size: 40rpx;
+  color: #efa68c;
+}
+
+.btn1 {
+  width: 60%;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  background-color: rgb(172, 2, 2);
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+  font-style: normal;
+  font-weight: bold;
+  font-family: KaiTi;
+}
+
+.btnImg {
+  margin-right: 8rpx;
+  width: 46rpx;
+  height: 46rpx;
+}
+
+.btn1::after {
+  border-radius: 98rpx;
+  border: 0;
+}
+
+.card {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 4px 1px 1px #ccc;
+  margin: 8px;
+  position: relative;
+}
+
 .viewset {
-  width:100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-content: center;
   border: 1px dashed lightblue;
+  background: white;
+}
+
+.wx-cards-title-card {
+  width: 100%;
+  margin: 24rpx;
+  background-color: #a13d3d;
+  border-radius: 6rpx;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+                0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+                0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.wx-cards-title-card .pc image {
+  width: 100%;
+}
+
+.wx-cards-title-card .title {
+  padding: 16rpx;
+  font-size: 48rpx;
+  font-weight: bold;
+}
+
+.wx-cards-title-card .context {
+  padding: 16rpx;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 28rpx;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.01071em;
+}
+
+.wx-cards-title-card .buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 8rpx;
+  padding-right: 8rpx;
+}
+
+.wx-cards-title-card .buttons .like {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wx-cards-title-card .buttons .like-number {
+  color: #6b6b6b;
+  font-size: 28rpx;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 200;
+  margin-top: -10rpx;
+  margin-left: -10rpx;
+  margin-right: 20rpx;
+}
+
+.wx-cards-title-card .tag {
+  /* margin: 20rpx 5rpx;
+  padding: 8rpx; */
+  text-align: center;
+}
+
+.i-tag {
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 20px;
+  border-radius: 2px;
+  background: #efa68c;
+  font-size: 14px;
+  vertical-align: middle;
+  border: 1rpx solid #dddee1;
+  font-family: Microsoft Yahei;
+}
+
+.i-tag-none {
+  border-color: #fff;
+}
+
+.i-tag-default {
+  border-color: #dddee1;
+  background: #e9eaec;
+}
+
+.i-tag-red {
+  background: #a13d3d;
+  color: #dddee1;
+}
+
+.i-tag-red-border {
+  color: #ed3f14;
+  background: #fff;
+  border-color: #ed3f14;
+}
+
+.i-tag-red-checked {
+  background: #ed3f14;
+  color: #fff;
+  border-color: #ed3f14;
+}
+
+.i-tag-green {
+  background: #19be6b;
+  color: #fff;
+  border-color: #19be6b;
+}
+
+.i-tag-green-border {
+  color: #19be6b;
+  background: #fff;
+  border-color: #19be6b;
+}
+
+.i-tag-green-checked {
+  background: #19be6b;
+  color: #fff;
+  border-color: #19be6b;
+}
+
+.i-tag-blue {
+  background: #2d8cf0;
+  color: #fff;
+  border-color: #2d8cf0;
+}
+
+.i-tag-blue-border {
+  color: #2d8cf0;
+  background: #fff;
+  border-color: #2d8cf0;
+}
+
+.i-tag-blue-checked {
+  background: #2d8cf0;
+  color: #fff;
+  border-color: #2d8cf0;
+}
+
+.i-tag-yellow {
+  background: #f90;
+  color: #fff;
+  border-color: #f90;
+}
+
+.i-tag-yellow-border {
+  color: #f90;
+  background: #fff;
+  border-color: #f90;
+}
+
+.i-tag-yellow-checked {
+  background: #f90;
+  color: #fff;
+  border-color: #f90;
+}
+
+.i-tag-default-checked {
+  background: #e9eaec;
+  color: #495060;
+  border-color: #e9eaec;
 }
